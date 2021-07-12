@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="Viewport" content= "width=device-width">
+  <meta name="description" content="Affordable and Professional IT Services">
+  <meta name="Keywords" content="web design, affordable web design, professional web design">
+  <meta name="author" content="Linda Mngadi">
+  <title>My Projects | Grey_Box-Tech </title>
+  <link rel="stylesheet" href="./css_files/style.css">
+  <script type="text/javascript" src="javascri.js"></script>
+</head>
+<body>
+  <header>
+  <div class="container">
+    <div id="branding">
+      <h1>
+        <span class="highlight">GREY_BOX</span> TECH
+      </h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Services.html">Services</a></li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <section class="project-class">
+      <div id="project-id">
+          <h1 id="anima">This page is where I post my projects</h1>
+          <h3>This is the first Project</h3>
+          <p>As I have mentioned in the previous page that part of my studies is Statistics</p>
+          <p>So I have done a bit of Time series analysis and this project below is a time series analysis project</p>
+      </div>
+
+  </section>
+
+  <section class="tsa">
+    <div id="one">
+      <p>
+        I have used used The Euro/USDollar data from Yahoo finance
+      </p>
+      <p>
+        I used the closing price, from 10jan2020 to 09jul2021
+      </p>
+
+    </div>
+
+    <p id="report1">
+    <p>first five observations</p>
+    <p>Date  and the Closing price</p>
+    <p>2020-01-10    1.111111</p>
+    <p>2020-01-13    1.111667</p>
+    <p>2020-01-14    1.113573</p>
+    <p>2020-01-15    1.113090</p>
+    <p>2020-01-16    1.115400</p>
+
+    <p>I checked if there were any null values</p>
+    <p>I got 0 Null values!</p>
+    <p>Then I did a plot of my data to see it, and That is one of very important steps in this kind of projects</p>
+    <p>Data Visualization!!</p>
+    </p>
+
+    <div id="chart1">
+      <img src="./ML_Time%20series_project/Closing_price%20plot.png" width="700" height="400">
+      <h3>Closing price up to 9th july 2020 with the Moving Average</h3>
+    </div>
+
+    <p>
+      Then I did Some Stationarity checks using the Aguemented Dickey Fuller Test "ADF"
+    </p>
+    <p>
+      And the results before differencing were like this :
+    </p>
+      <p>Stationarity using Dickey fuller test :</p>
+    <p>Test statistic :         -1.377908</p>
+    <p>p-value                   0.592820</p>
+    <p>lags used                 1.000000</p>
+    <p>No. of Observations     389.000000</p>
+    <p>critical value (1%)      -3.447273</p>
+    <p>critical value (5%)      -2.868999</p>
+    <p>critical value (10%)     -2.570743</p>
+
+    <p>
+      Then I differenced the series and performed The ADF again
+    </p>
+    <p> Then I got this :</p>
+    <p>
+      Stationarity test after after 1st difference : </p>
+    <p>Test statistic :      -1.796465e+01</p>
+    <p>p-value                2.809167e-30</p>
+    <p>lags used              0.000000e+00</p>
+    <p>No. of Observations    3.890000e+02</p>
+
+    <div id="chart2">
+      <img src="ML_Time%20series_project/first%20Difference%20plot.png" width="700" height="400">
+    </div>
+    <p> I Then did some ACF and PACF plots, those are some Autocorrelation plots </p>
+    <p>And then I took the model with the lowest AIC as shown below:</p>
+    <p>
+      first one is a ARIMA(1,0,1)</p>
+    <p>and the AIC and BIC are : </p>
+    <p>AIC :  -3011.4599139292786</p>
+    <p>BIC : -2995.5850836893374</p>
+
+    <p>
+      The visuals are :
+    </p>
+
+    <div id="final_plots">
+      <img src="ML_Time%20series_project/Forecast.png" width="700" height="400">
+    </div>
+    <h3>The ARIMA(1,0,1) Plot with a prediction of up to 29th july 2021 </h3>
+    <h2>NB this is NOT an Investment advice!!!</h2>
+    <div id="zoom-inn">
+      <h3> A Closer look in!</h3>
+      <img src="ML_Time%20series_project/Prediction%20to%20the%2029thjuly.png" width="700" height="400">
+    </div>
+
+    <h3>Thank you for viewing my project and website, all this was Authored by Linda Mngadi &copy;</h3>
+
+  </section>
+
+  <section id="footer">
+    <div class="container">
+      <footer>
+        <p>
+          Grey_Box-Tech Solutions, copyright &copy; 2021
+        </p>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
