@@ -55,13 +55,21 @@ header a:hover{
 
 /*Showcase*/
 
+#intro{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
 #showcase {
-    float: right;
-    min-height: 500px;
+    /*float: right;*/
+    min-height: 850px;
     min-width: 700px;
-    margin-right: 320px;
+    /*margin-right: 310px;*/
     background: url("../img/showcase47.jpg") no-repeat ;
-    color: midnightblue;
+    background-position: center;
+    background-size: auto;
+    background-color: dimgrey;
+    color: blue;
 
 }
 #showcase h1{
