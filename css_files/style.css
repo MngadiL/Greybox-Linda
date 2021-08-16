@@ -1,319 +1,371 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
-    background-color: #f8f7f5;
-}
+@media screen and (min-width:480px)/* and (max-width:1024px)*/ {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 0;
+        margin: 0;
+        background-color: #f8f7f5;
+    }
+    
+    /*Global*/
+    .container{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+  
+    
+    header{
+        background: darkturquoise;
+        color: darkblue;
+        padding-top: 30px;
+        min-height: 60px;
+        border-bottom: midnightblue 3px solid;
+    }
+    header a{
+        color: darkblue;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    
+    header li {
+        float: left;
+        display: inline;
+        padding: 0 20px 0 20px;
+    }
+    header #branding{
+        float: left;
+    }
+    header #branding{
+        margin: 0;
+    }
+    header nav{
+        float: right;
+        margin-top: 10px;
+    }
+    header .highlight,header.current a{
+        color: darkslategrey;
+        font-weight: bold ;
+        border-bottom: dodgerblue;
+    }
+    header a:hover{
+        color: rgb(79, 47, 68);
+        font-weight: bold;
+    }
+    
+    /*Showcase*/
+    
+    #intro{
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+    
+    /*@media screen and (min-width:50px) and (max-width:1024px){ */
+        #showcase {
+            /*float: right;*/
+            min-height: 850px;
+            min-width: 700px;
+            /*margin-right: 310px;*/
+            background: url("../img/showcase47.jpg") no-repeat ;
+            background-position: center;
+            background-size: contain;
+            background-color: dimgrey;
+            color: blue;
+        
+        }
+    
+   
 
-/*Global*/
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+    #showcase h1{
+        margin-top: 100px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    
+    }
+    #newsletter{
+        padding: 15px;
+        color: darkgrey;
+        background: dodgerblue;
+        border-bottom: aqua 5px solid;
+    }
+    
+    #newsletter{
+        padding: 15px;
+        color: darkblue;
+        background: dimgrey;
+        /*border-bottom: aqua 5px solid;*/
+    }
+    
+    
+    #newsletter h1{
+        float: left;
+    }
+    #newsletter form{
+        float: right;
+        margin-top: 20px;
+    }
+    /*
+    #newsletter input[type="email"]{
+        padding: 4px;
+        height : 25px;
+        width: 250px;
+    }
+    */
+    
+    button{
+        height: 38px;
+        background: darkblue;
+        border: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: azure;
+    }
+    #boxes {
+        margin-top: 30px;
+    }
+    
+    .project-class{
+        color: mediumblue;
+    }
+    
+    @keyframes lights{
+        0%,100%{text-shadow: 4px 4px yellow;}
+        50%{text-shadow: 4px 4px red;}
+    }
+    
+    #anima{
+        color: yellow;
+        font-weight: bold;
+        animation: lights 2s 10s;
+        color: mediumblue;
+    }
+    
+    #one{
+        background-color: dimgrey;
+        border-top: dimgrey 5px solid;
+        font-weight: bold;
 
-header{
-    background: darkturquoise;
-    color: darkblue;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: midnightblue 3px solid;
-}
-header a{
-    color: darkblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
+    }
+    
+    .tsa{
+        background-color: dimgrey;
+        border-bottom: dimgrey 10px solid;
+    
+    }
+    
+    #proj_btn{
+        border-radius: 5px ;
+        background-color: azure;
+        font-weight: bold;
+    }
+    proj_btn :hover{ 
+        background: rgb(139, 130, 0);
+    }
+    
+    #one{
+        text-align: center;
+    }
+    
+    #report1{
+        float: left;
+        padding-left: 10px;
+        margin-left: 10px;
+        border: 5px dimgrey solid;
+        text-align: center;
+    }
+    
+    #boxes .box{
+        float: left;
+        width: 40%;
+        text-align: center;
+        padding: 10px;
+        color: royalblue;
+        font-size: 20px;
+    }
+    #boxes .box img{
+        width: 150px;
+    }
+    
+    aside#sidebar{
+        float: right;
+        width: 30%;
+        margin-top: 10px;
+        background-color: dimgrey;
+    }
+    
+    article#main-col{
+        float: top;
+        width: auto;
+        background-color: cadetblue;
+        border-top: cadetblue 5px solid;
+        border-bottom: midnightblue 4px solid;
+        text-align: center;
+    }
+    
+    #main_some{
+        background-color: grey;
+        border-bottom-width: 3px;
+        min-width: 1000px;
+        min-height: 520px;
+        text-align: center;
+    }
+    
+    
+    #project-id{
+        text-align: center;
+        background-color: dimgrey;
+        border-top: dimgrey 5px solid ;
+        border-bottom: dimgrey 5px solid;
+    }
+    
+    @keyframes example {
+      0%   {background-color:cyan; left:0px; top:0px;}
+      25%  {background-color:dimgrey; left:200px; top:0px;}
+      50%  {background-color: royalblue; left:200px; top:200px;}
+      75%  {background-color: aliceblue; left:0px; top:200px;}
+      100% {background-color: aqua; left:0px; top:0px;}
+    }
+    
+    /* The element to apply the animation to */
+    #main_some {
+      width: 100px;
+      height: 100px;
+        border-top: blue 5px solid;
+      position: relative;
+      background-color: deepskyblue;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: 1;
+    }
+    
+    
+    #contact{
+        float: bottom;
+        background-color: darkgrey ;
+        border-top: darkgray 5px solid;
+        border-bottom: aqua 5px solid;
+    }
+    
+    #myslef img{
+        margin-left: 30px;
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+    
+    
+    #contact{
+        text-align: center;
+    }
+    #ML_stuff img{
+        margin-left: 30px;
+        border-radius: 50%;
+    }
+    #studies img{
+        margin-left: 25px;
+        border-radius: 50%;
+    }
+    
+    #develop img{
+        margin-left: 25px;
+        border-radius: 50%;
+        border: 1px solid;
+    }
+    #service_page img{
+        margin-left: 110px;
+        padding-bottom: 200px;
+        border-radius: 50%;
+    
+    }
+    #service_page{
+        float: bottom;
+    }
+    
+    footer{
+        padding: 20px;
+        margin-top: 20px;
+        color: midnightblue;
+        background-color: aqua;
+        text-align: center;
+        width: auto;
+        border-top: darkblue 3px solid;
+    }
+    
+    #newsleter{
+        border-top: deepskyblue 5px solid;
+        background-color: dimgrey;
+        float: left;
+    }
+    
+    #chart1{
+        border-radius: 20px ;
+        margin-left: 70px;
+        border: blue solid;
 
-header li {
-    float: left;
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-header #branding{
-    float: left;
-}
-header #branding{
-    margin: 0;
-}
-header nav{
-    float: right;
-    margin-top: 10px;
-}
-header .highlight,header.current a{
-    color: darkslategrey;
-    font-weight: bold ;
-    border-bottom: dodgerblue;
-}
-header a:hover{
-    color: darkslategrey;
-    font-weight: bold;
-}
-
-/*Showcase*/
-
-#intro{
-    margin-left: 15px;
-    margin-top: 20px;
-}
-
-#showcase {
-    /*float: right;*/
-    min-height: 850px;
-    min-width: 700px;
-    /*margin-right: 310px;*/
-    background: url("../img/showcase47.jpg") no-repeat ;
-    background-position: center;
-    background-size: auto;
-    background-color: dimgrey;
-    color: blue;
-
-}
-#showcase h1{
-    margin-top: 100px;
-    font-size: 30px;
-    margin-bottom: 10px;
-
-}
-#newsletter{
-    padding: 15px;
-    color: darkgrey;
-    background: dodgerblue;
-    border-bottom: aqua 5px solid;
-}
-
-#newsletter{
-    padding: 15px;
-    color: darkblue;
-    background: dimgrey;
-    /*border-bottom: aqua 5px solid;*/
-}
-
-
-#newsletter h1{
-    float: left;
-}
-#newsletter form{
-    float: right;
-    margin-top: 20px;
-}
-/*
-#newsletter input[type="email"]{
-    padding: 4px;
-    height : 25px;
-    width: 250px;
-}
-*/
-
-button{
-    height: 38px;
-    background: darkblue;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: azure;
-}
-#boxes {
-    margin-top: 30px;
-}
-
-.project-class{
-    color: mediumblue;
-}
-
-@keyframes lights{
-    0%,100%{text-shadow: 4px 4px yellow;}
-    50%{text-shadow: 4px 4px red;}
-}
-
-#anima{
-    color: yellow;
-    font-weight: bold;
-    animation: lights 2s 10s;
-    color: mediumblue;
-}
-
-#one{
-    background-color: dimgrey;
-    border-top: dimgrey 5px solid;
-    font-weight: bold;
-
-}
-
-.tsa{
-    background-color: dimgrey;
-    border-bottom: dimgrey 10px solid;
-
-}
-
-#proj_btn{
-    border-radius: 5px;
-    background-color: azure;
-    font-weight: bold;
-
-}
-
-#one{
-    text-align: center;
-}
-
-#report1{
-    float: left;
-    padding-left: 10px;
-    margin-left: 10px;
-    border: 5px dimgrey solid;
-}
-
-#boxes .box{
-    float: left;
-    width: 40%;
-    text-align: center;
-    padding: 10px;
-    color: royalblue;
-    font-size: 20px;
-}
-#boxes .box img{
-    width: 150px;
-}
-
-aside#sidebar{
-    float: right;
-    width: 30%;
-    margin-top: 10px;
-    background-color: dimgrey;
-}
-
-article#main-col{
-    float: top;
-    width: auto;
-    background-color: cadetblue;
-    border-top: cadetblue 5px solid;
-    border-bottom: midnightblue 4px solid;
-    text-align: center;
-}
-
-#main_some{
-    background-color: grey;
-    border-bottom-width: 3px;
-    min-width: 1000px;
-    min-height: 520px;
-    text-align: center;
-}
-
-
-#project-id{
-    text-align: center;
-    background-color: dimgrey;
-    border-top: dimgrey 5px solid ;
-    border-bottom: dimgrey 5px solid;
-}
-
-@keyframes example {
-  0%   {background-color:cyan; left:0px; top:0px;}
-  25%  {background-color:dimgrey; left:200px; top:0px;}
-  50%  {background-color: royalblue; left:200px; top:200px;}
-  75%  {background-color: aliceblue; left:0px; top:200px;}
-  100% {background-color: aqua; left:0px; top:0px;}
-}
-
-/* The element to apply the animation to */
-#main_some {
-  width: 100px;
-  height: 100px;
-    border-top: blue 5px solid;
-  position: relative;
-  background-color: deepskyblue;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: 1;
-}
-
-
-#contact{
-    float: bottom;
-    background-color: darkgrey ;
-    border-top: darkgray 5px solid;
-    border-bottom: aqua 5px solid;
-}
-
-#myslef img{
-    margin-left: 30px;
-    border: 1px solid;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-}
-
-
-#contact{
-    text-align: center;
-}
-#ML_stuff img{
-    margin-left: 30px;
-    border-radius: 50%;
-}
-#studies img{
-    margin-left: 25px;
-    border-radius: 50%;
-}
-
-#develop img{
-    margin-left: 25px;
-    border-radius: 50%;
-    border: 1px solid;
-}
-#service_page img{
-    margin-left: 110px;
-    padding-bottom: 200px;
-    border-radius: 50%;
-
-}
-#service_page{
-    float: bottom;
-}
-
-footer{
-    padding: 20px;
-    margin-top: 20px;
-    color: midnightblue;
-    background-color: aqua;
-    text-align: center;
-    width: auto;
-    border-top: darkblue 3px solid;
-}
-
-#newsleter{
-    border-top: deepskyblue 5px solid;
-    background-color: dimgrey;
-    float: left;
-}
-
-#chart1{
-    border-radius: 10px ;
-    margin-left: 10px;
-}
-#chart2 img{
-    border-radius: 25px ;
-    margin-left: 10px;
-}
-
-#final_plots img{
-    border-radius: 15px ;
-    margin-left: 10px;
-}
-
-#zoom-inn img{
-    border-radius: 15px ;
-    margin-left: 10px;
-}
-
-#rep{
-    float: contour;
-}
-
-#report1 p{
-    margin-left: 10px;
+    }
+    #chart_two img{
+        border-radius: 25px ;
+        margin-left: 70px;
+        border: blue solid;
+    }
+    
+    #final_plots img{
+        border-radius: 20px ;
+        margin-left: 70px;
+        text-align: center;
+        border: blue solid;
+    }
+    
+    #zoom-inn img{
+        border-radius: 20px ;
+        margin-left: 70px;
+        border: blue solid;
+    }
+    
+    #rep{
+        float: contour;
+    }
+    #Head{ 
+        text-align: center;
+        margin-right: 50%;
+    }
+    #numb2{ 
+        text-align: center;
+        margin-right: 50%;
+    }
+    #numb3{ 
+        text-align: center;
+        margin-right: 50%; 
+    }
+    #numb4{ 
+        text-align: center;
+        margin-right: 50%;
+    }
+    .Close-btn{ 
+        position: absolute;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .Close-btn1{ 
+        position: absolute;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .Close-btn2{ 
+        position: absolute;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .Close-btn3{ 
+        position: absolute;
+        right: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
 }

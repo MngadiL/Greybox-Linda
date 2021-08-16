@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="Viewport" content= "width=device-width,initial-scale=1.0">
   <meta name="description" content="Affordable and Professional IT Services">
   <meta name="Keywords" content="web design, affordable web design, professional web design">
@@ -9,9 +10,11 @@
   <title>Projects | Grey_Box-Tech </title>
   <link rel="stylesheet" href="./css_files/style.css">
   <link rel="bootstrap" href="./css_files/bootstrap.min.css">
+  <link rel="bootstrap" href="./css_files/bootstrap-grid.min.css">
+  <link rel="bootstrap" href="./css_files/bootstrap.min.css.map">
 </head>
 <body>
-  <header>
+  <header class="header">
   <div class="container">
     <div id="branding">
       <h1>
@@ -49,75 +52,94 @@
 
     </div>
 
-    <p id="report1">
-    <p>first five observations</p>
-    <p>Date  and the Closing price</p>
-    <p>2020-01-10    1.111111</p>
-    <p>2020-01-13    1.111667</p>
-    <p>2020-01-14    1.113573</p>
-    <p>2020-01-15    1.113090</p>
-    <p>2020-01-16    1.115400</p>
-    <p>I checked if there were any null values</p>
-    <p>I got 0 Null values!</p>
-    <p>Then I did a plot of my data to see it, and That is one of very important steps in these kind of projects</p>
-    <p>Data Visualization!!</p>
-    </p>
+    <div id="Head">
+      <p id="report1">
+        <p>first five observations</p>
+        <p>Date  and the Closing price</p>
+        <p>2020-01-10    1.111111</p>
+        <p>2020-01-13    1.111667</p>
+        <p>2020-01-14    1.113573</p>
+        <p>2020-01-15    1.113090</p>
+        <p>2020-01-16    1.115400</p>
+        <p>I checked if there were any null values</p>
+        <p>I got 0 Null values!</p>
+        <p>Then I did a plot of my data to see it, and That is one of very important steps in these kind of projects</p>
+        <p>Data Visualization!!</p>
+        </p>
+    </div>
 
-    <div >
+    <div id="numb2">
       <h3>Closing price up to 9th july 2020 with the Moving Average</h3>
-      <img id="chart1" src="./ML_Time%20series_project/Closing_price%20plot.png" width="600" height="300">
+      <span class="Close-btn">
+        &times;
+      </span>
+      <img id="chart1" src="./ML_Time%20series_project/Closing_price%20plot.png" width="600" height="300" >
     </div>
 
-    <p>
-      Then I did Some Stationarity checks using the Aguemented Dickey Fuller Test "ADF"
-    </p>
-    <p>
-      And the results before differencing were like this :
-    </p>
-      <p>Stationarity using Dickey fuller test :</p>
-    <p>Test statistic :         -1.377908</p>
-    <p>p-value                   0.592820</p>
-    <p>lags used                 1.000000</p>
-    <p>No. of Observations     389.000000</p>
-    <p>critical value (1%)      -3.447273</p>
-    <p>critical value (5%)      -2.868999</p>
-    <p>critical value (10%)     -2.570743</p>
-
-    <p>
-      Then I differenced the series and performed The ADF again
-    </p>
-    <p> Then I got this :</p>
-    <p>
-      Stationarity test after after 1st difference : </p>
-    <p>Test statistic :      -1.796465e+01</p>
-    <p>p-value                2.809167e-30</p>
-    <p>lags used              0.000000e+00</p>
-    <p>No. of Observations    3.890000e+02</p>
-
-    <div id="chart2">
-      <img src="ML_Time%20series_project/first%20Difference%20plot.png" width="700" height="400">
+    <div id="numb3">
+      <p>
+        Then I did Some Stationarity checks using the Aguemented Dickey Fuller Test "ADF"
+      </p>
+      <p>
+        And the results before differencing were like this :
+      </p>
+        <p>Stationarity using Dickey fuller test :</p>
+      <p>Test statistic :         -1.377908</p>
+      <p>p-value                   0.592820</p>
+      <p>lags used                 1.000000</p>
+      <p>No. of Observations     389.000000</p>
+      <p>critical value (1%)      -3.447273</p>
+      <p>critical value (5%)      -2.868999</p>
+      <p>critical value (10%)     -2.570743</p>
+  
+      <p>
+        Then I differenced the series and performed The ADF again
+      </p>
+      <p> Then I got this :</p>
+      <p>
+        Stationarity test after after 1st difference : </p>
+      <p>Test statistic :      -1.796465e+01</p>
+      <p>p-value                2.809167e-30</p>
+      <p>lags used              0.000000e+00</p>
+      <p>No. of Observations    3.890000e+02</p>
     </div>
-    <p> I Then did some ACF and PACF plots, those are some Autocorrelation plots </p>
-    <p>And then I took the model with the lowest AIC as shown below:</p>
-    <p>
-      first one is a ARIMA(1,0,1)</p>
-    <p>and the AIC and BIC are : </p>
-    <p>AIC :  -3011.4599139292786</p>
-    <p>BIC : -2995.5850836893374</p>
 
-    <p>
-      The visuals are :
-    </p>
+    <div id="chart_two">
+      <span class="Close-btn1">
+        &times;
+      </span>
+      <img id="chart2" src="ML_Time%20series_project/first%20Difference%20plot.png" width="600" height="300">
+    </div>
+
+    <div id="numb4">
+      <p> I Then did some ACF and PACF plots, those are some Autocorrelation plots </p>
+      <p>And then I took the model with the lowest AIC as shown below:</p>
+      <p>
+        first one is a ARIMA(1,0,1)</p>
+        <p>and the AIC and BIC are : </p>
+        <p>AIC :  -3011.4599139292786</p>
+        <p>BIC : -2995.5850836893374</p>
+        <p>
+          The visuals are :
+        </p>
+    </div>
 
     <div id="final_plots">
       <h3>The ARIMA(1,0,1) Plot with a prediction of up to 29th july 2021 </h3>
-      <img src="ML_Time%20series_project/Forecast.png" width="700" height="400">
+      <span class="Close-btn2">
+        &times;
+      </span>
+      <img id="chart3" src="ML_Time%20series_project/Forecast.png" width="600" height="300">
+      <h2>NB this is NOT an Investment advice!!!</h2>
     </div>
 
-    <h2>NB this is NOT an Investment advice!!!</h2>
+    
     <div id="zoom-inn">
       <h3> A Closer look in!</h3>
-      <img src="ML_Time%20series_project/Prediction%20to%20the%2029thjuly.png" width="700" height="400">
+      <span class="Close-btn3">
+        &times;
+      </span>
+      <img id="chart4" src="ML_Time%20series_project/Prediction%20to%20the%2029thjuly.png" width="600" height="300">
     </div>
 
     <h3>Thank you for visiting my project and website, all this was Authored by Linda Mngadi &copy;</h3>
@@ -133,5 +155,6 @@
       </footer>
     </div>
   </section>
+  <script src="./javascri.js"></script>
 </body>
 </html>
