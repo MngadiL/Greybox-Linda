@@ -37,8 +37,6 @@
     }
     header #branding{
         float: left;
-    }
-    header #branding{
         margin: 0;
     }
     header nav{
@@ -62,7 +60,6 @@
         margin-top: 20px;
     }
     
-    /*@media screen and (min-width:50px) and (max-width:1024px){ */
         #showcase {
             /*float: right;*/
             min-height: 850px;
@@ -73,10 +70,26 @@
             background-size: contain;
             background-color: dimgrey;
             color: blue;
-        
         }
+
+    @media screen and (min-width:50px) and (max-width:600px){
+        #showcase {
+            min-height: 550px;
+            min-width: 500px;
+            /*margin-right: 310px;*/
+            background: url("../img/showcase47.jpg") no-repeat ;
+            background-position: center;
+            background-size: contain;
+            background-color: dimgrey;
+            color: blue;
+        }
+    }
+    @media screen and (min-width:50px) and (max-width:800px){
+        .toplist{
+            display: grid;
+        }
+    }
     
-   
 
     #showcase h1{
         margin-top: 100px;
@@ -102,10 +115,7 @@
     #newsletter h1{
         float: left;
     }
-    #newsletter form{
-        float: right;
-        margin-top: 20px;
-    }
+
     /*
     #newsletter input[type="email"]{
         padding: 4px;
@@ -240,6 +250,25 @@
       animation-iteration-count: 1;
     }
     
+    @media screen and (min-width:50px) and (max-width:800px){
+        #main_some {
+            width: 100px;
+            height: 100px;
+            border-top: blue 5px solid;
+            position: relative;
+            background-color: deepskyblue;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+
+            background-color: grey;
+        border-bottom-width: 3px;
+        min-width: 480px;
+        min-height: 550px;
+        text-align: center;
+            
+        }
+    }
     
     #contact{
         float: bottom;
