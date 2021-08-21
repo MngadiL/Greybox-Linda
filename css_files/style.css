@@ -75,8 +75,8 @@
 
     @media screen and (min-width:50px) and (max-width:600px){
         #showcase {
-            min-height: 550px;
-            min-width: 500px;
+            min-height: 500px;
+            min-width: 380px;
             /*margin-right: 310px;*/
             background: url("../img/showcase47.jpg") no-repeat ;
             background-position: center;
@@ -88,6 +88,7 @@
     @media screen and (min-width:50px) and (max-width:800px){
         .toplist{
             display: grid;
+            float: top;
         }
     }
     
@@ -262,11 +263,11 @@
             animation-duration: 4s;
             animation-iteration-count: 1;
 
-            background-color: grey;
-        border-bottom-width: 3px;
-        min-width: 480px;
-        min-height: 550px;
-        text-align: center;
+            background-color: deeppink;
+            border-bottom-width: 3px;
+            min-width: 450px;
+            min-height: 550px;
+            text-align: center;
             
         }
     }
