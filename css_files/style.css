@@ -1,3 +1,4 @@
+@media screen and (min-width:480px)/* and (max-width:1024px)*/ {
     body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
@@ -72,7 +73,7 @@
             color: blue;
         }
 
-    @media screen and (min-width:50px) and (max-width:800px){
+    @media screen and (min-width:50px) and (max-width:600px){
         #showcase {
             min-height: 500px;
             min-width: 380px;
@@ -81,13 +82,19 @@
             background-position: center;
             background-size: contain;
             background-color: dimgrey;
-            color: blue;
+            color:aliceblue;
         }
     }
     @media screen and (min-width:50px) and (max-width:800px){
         .toplist{
             display: grid;
             float: top;
+        }
+        #screen1{
+            font-size: medium;
+        }
+        #screen2{
+            font-size: medium;
         }
     }
     
@@ -398,3 +405,23 @@
         font-size: 30px;
         cursor: pointer;
     }
+    @media screen and (min-width:50px) and (max-width:600px){ 
+
+        #chart2{
+            width: 70%;
+            height: 50%;
+        }
+        #chart1{
+            width: 330px;
+            height: 50%;
+        }
+        #chart3{
+            width: 70%;
+            height: 50%;
+        }
+        #chart4{
+            width: 70%;
+            height: 50%;
+        }
+    }
+}
