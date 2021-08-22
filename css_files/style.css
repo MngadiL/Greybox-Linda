@@ -410,17 +410,21 @@
         #chart2{
             width: 70%;
             height: 50%;
+            marigin-right:10px;
         }
         #chart1{
-            width: 330px;
+            width: 70%;
             height: 50%;
+            marigin-right:10px;
         }
         #chart3{
             width: 70%;
             height: 50%;
+            marigin-right:10px;
         }
         #chart4{
             width: 70%;
             height: 50%;
+            marigin-right:10px;
         }
     }
