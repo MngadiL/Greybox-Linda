@@ -82,7 +82,7 @@
             background-position: center;
             background-size: contain;
             background-color: dimgrey;
-            color:aliceblue;
+            color:aquamarine;
         }
     }
     @media screen and (min-width:50px) and (max-width:800px){
