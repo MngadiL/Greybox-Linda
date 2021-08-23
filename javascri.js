@@ -88,7 +88,7 @@ function pic_function(){
         close_img.addEventListener('click',Closs);
         
         function Closs(){ 
-            image1.style.width = '350px';
+            image1.style.width = '70%';
             image1.style.height = '50%';
         }
 
