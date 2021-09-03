@@ -75,8 +75,8 @@
 
     @media screen and (min-width:50px) and (max-width:600px){
         #showcase {
-            min-height: 550px;
-            min-width: 350px;
+            min-height: 480px;
+            min-width: 380px;
             /*margin-right: 310px;*/
             background: url("../img/showcase47.jpg") no-repeat ;
             background-position: center;
