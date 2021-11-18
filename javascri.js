@@ -81,7 +81,7 @@ function pic_function(){
         image1.addEventListener('click',openimg1);
         
         function openimg1(){ 
-            image1.style.width = '420px';
+            image1.style.width = '400px';
             image1.style.height = '250px';
         }
         
@@ -95,7 +95,7 @@ function pic_function(){
         var close_img1 = document.getElementsByClassName('Close-btn1')[0];
         image2.addEventListener('click',openimg2);
         function openimg2(){ 
-            image2.style.width = '420px';
+            image2.style.width = '400px';
             image2.style.height = '250px';
         }
         
@@ -110,7 +110,7 @@ function pic_function(){
         image3.addEventListener('click',openimg3);
         
         function openimg3(){ 
-            image3.style.width = '420px';
+            image3.style.width = '400px';
             image3.style.height = '250px';
         }
         close_img2.addEventListener('click',Closs2);
@@ -124,7 +124,7 @@ function pic_function(){
         
         image4.addEventListener('click',openimg4);
         function openimg4(){ 
-            image4.style.width = '420px';
+            image4.style.width = '400px';
             image4.style.height = '250px';
         }
         close_img3.addEventListener('click',Closs3);
@@ -146,5 +146,5 @@ css_stuff.addEventListener('click',pic_function );
 
 
 
-var all_images = document.getElementsByTagName("img");
-all_images.classList.add('img-responsive');
+//var all_images = document.getElementsByTagName("img");
+//all_images.classList('img-responsive');

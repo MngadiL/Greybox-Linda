@@ -16,7 +16,7 @@
     }
   
     
-    header{
+    #headd{
         background: darkturquoise;
         color: darkblue;
         padding-top: 30px;
@@ -50,7 +50,7 @@
         border-bottom: dodgerblue;
     }
     header a:hover{
-        color: rgb(79, 47, 68);
+        color: rgb(209, 63, 158);
         font-weight: bold;
     }
     
@@ -73,21 +73,41 @@
             color: blue;
         }
 
-    @media screen and (min-width:50px) and (max-width:600px){
+    @media screen and (max-width:500px) {
         #showcase {
-            min-height: 550px;
-            min-width: 380px;
+            min-height: 380px;
+            min-width: 220px;
             /*margin-right: 310px;*/
             background: url("../img/showcase47.jpg") no-repeat ;
             background-position: center;
             background-size: contain;
             background-color: dimgrey;
-            color:aliceblue;
+            color:aqua;
         }
+        
+        #headd{
+            background: darkturquoise;
+            color: darkblue;
+            padding-top: 30px;
+            min-height: 60px;
+            border-bottom: midnightblue 3px solid;
+        }
+        .box img{
+            width: 10px;
+            height: 70px;
+        }
+        #boxes .box{
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 10px;
+            color: royalblue;
+            font-size: 10px;
     }
-    @media screen and (min-width:50px) and (max-width:800px){
-        .toplist{
-            display: grid;
+    @media screen and (min-width:50px) and (max-width:500px){
+        .flex-container{
+            display: flex;
+            flex-direction: column;
             float: top;
         }
         #screen1{
@@ -269,9 +289,9 @@
             animation-duration: 4s;
             animation-iteration-count: 1;
 
-            background-color: deeppink;
+            background-color: darkturquoise;
             border-bottom-width: 3px;
-            min-width: 450px;
+            min-width: 480px;
             min-height: 550px;
             text-align: center;
             
@@ -424,4 +444,5 @@
             height: 50%;
         }
     }
+}
 }
