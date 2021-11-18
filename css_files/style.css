@@ -1,4 +1,4 @@
-
+@media screen and (min-width:480px)/* and (max-width:1024px)*/ {
     body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
@@ -50,7 +50,7 @@
         border-bottom: dodgerblue;
     }
     header a:hover{
-        color: rgb(209, 63, 158);
+        color: rgb(79, 47, 68);
         font-weight: bold;
     }
     
@@ -73,55 +73,21 @@
             color: blue;
         }
 
-    @media screen and (max-width:500px) {
+    @media screen and (min-width:50px) and (max-width:600px){
         #showcase {
-<<<<<<< HEAD
-            min-height: 380px;
-            min-width: 220px;
-=======
-            min-height: 500px;
+            min-height: 550px;
             min-width: 380px;
->>>>>>> 1d63542168f6653062df3b92977c5f3140cd60f0
             /*margin-right: 310px;*/
             background: url("../img/showcase47.jpg") no-repeat ;
             background-position: center;
             background-size: contain;
-            background-color: dimgrey;
-<<<<<<< HEAD
-            color:aqua;
-        }
-        
-        #headd{
-            background: darkturquoise;
-            color: darkblue;
-            padding-top: 30px;
-            min-height: 60px;
-            border-bottom: midnightblue 3px solid;
-        }
-        .box img{
-            width: 10px;
-            height: 70px;
-        }
-        #boxes .box{
-            float: left;
-            width: 20%;
-            text-align: center;
-            padding: 10px;
-            color: royalblue;
-            font-size: 10px;
-    }
-    @media screen and (min-width:50px) and (max-width:500px){
-        .flex-container{
-            display: flex;
-            flex-direction: column;
-=======
-            color:aquamarine;
+            background-color: dimgray;
+            color:lightseagreen;
         }
     }
     @media screen and (min-width:50px) and (max-width:800px){
         .toplist{
-            display: flex;
->>>>>>> 1d63542168f6653062df3b92977c5f3140cd60f0
+            display: grid;
             float: top;
         }
         #screen1{
@@ -444,12 +410,10 @@
         #chart2{
             width: 70%;
             height: 50%;
-            
         }
         #chart1{
             width: 330px;
             height: 50%;
-            
         }
         #chart3{
             width: 70%;
@@ -460,8 +424,4 @@
             height: 50%;
         }
     }
-<<<<<<< HEAD
 }
-}
-=======
->>>>>>> 1d63542168f6653062df3b92977c5f3140cd60f0
