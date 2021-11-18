@@ -88,7 +88,7 @@ function pic_function(){
         close_img.addEventListener('click',Closs);
         
         function Closs(){ 
-            image1.style.width = '350px';
+            image1.style.width = '70%';
             image1.style.height = '50%';
         }
 
@@ -146,5 +146,10 @@ css_stuff.addEventListener('click',pic_function );
 
 
 
+<<<<<<< HEAD
 //var all_images = document.getElementsByTagName("img");
 //all_images.classList('img-responsive');
+=======
+var all_images = document.getElementsByTagName("img");
+all_images.classList.add('img-responsive');
+>>>>>>> 1d63542168f6653062df3b92977c5f3140cd60f0
