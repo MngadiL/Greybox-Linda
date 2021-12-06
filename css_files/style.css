@@ -73,10 +73,10 @@
             color: blue;
         }
 
-    @media screen and (min-width:50px) and (max-width:600px){
+    @media screen and (min-width:50px) {
         #showcase {
-            min-height: 550px;
-            min-width: 380px;
+            min-height: 450px;
+            min-width: 300px;
             /*margin-right: 310px;*/
             background: url("../img/showcase47.jpg") no-repeat ;
             background-position: center;
@@ -85,7 +85,7 @@
             color:lightseagreen;
         }
     }
-    @media screen and (min-width:50px) and (max-width:800px){
+    @media screen and (min-width:50px){
         .toplist{
             display: grid;
             float: top;
@@ -98,6 +98,20 @@
         }
     }
     
+    @media screen and (min-width: 50px) {
+        #boxes .box{
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 10px;
+            color: royalblue;
+            font-size: 15px;
+        }
+        #boxes .box img {
+            width: 15px;
+            height: 70px;
+        }
+    }
 
     #showcase h1{
         margin-top: 100px;
@@ -258,7 +272,7 @@
       animation-iteration-count: 1;
     }
     
-    @media screen and (min-width:50px) and (max-width:800px){
+    @media screen and (min-width:50px){
         #main_some {
             width: 100px;
             height: 100px;
@@ -275,6 +289,48 @@
             min-height: 550px;
             text-align: center;
             
+        }
+        #contact{
+            float: bottom;
+            background-color: darkgrey ;
+            border-top: darkgray 5px solid;
+            border-bottom: aqua 5px solid;
+        }
+        
+        #myslef img{
+            margin-left: 30px;
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+        
+        
+        #contact{
+            text-align: center;
+        }
+        #ML_stuff img{
+            margin-left: 30px;
+            border-radius: 50%;
+        }
+        #studies img{
+            margin-left: 25px;
+            border-radius: 50%;
+        }
+        
+        #develop img{
+            margin-left: 25px;
+            border-radius: 50%;
+            border: 1px solid;
+        }
+        #service_page img{
+            margin-left: 110px;
+            padding-bottom: 200px;
+            border-radius: 50%;
+        
+        }
+        #service_page{
+            float: bottom;
         }
     }
     
