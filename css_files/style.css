@@ -73,10 +73,10 @@
             color: blue;
         }
 
-    @media screen and (min-width:50px) {
+    @media screen and (max-width:650px) {
         #showcase {
-            min-height: 450px;
-            min-width: 300px;
+            min-height: 580px;
+            min-width: 320px;
             /*margin-right: 310px;*/
             background: url("../img/showcase47.jpg") no-repeat ;
             background-position: center;
@@ -85,7 +85,7 @@
             color:lightseagreen;
         }
     }
-    @media screen and (min-width:50px){
+    @media screen and (max-width:650px){
         .toplist{
             display: grid;
             float: top;
@@ -98,7 +98,7 @@
         }
     }
     
-    @media screen and (min-width: 50px) {
+    @media screen and (max-width:650px) {
         #boxes .box{
             float: left;
             width: 20%;
@@ -272,7 +272,7 @@
       animation-iteration-count: 1;
     }
     
-    @media screen and (min-width:50px){
+    @media screen and (max-width:650px){
         #main_some {
             width: 100px;
             height: 100px;
